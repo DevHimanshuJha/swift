@@ -1,0 +1,9 @@
+Pods/
+GoogleService-Info.plist
+Info.plist
+*.DS_Store
+xcuserdata/
+../main.js
+
+
+

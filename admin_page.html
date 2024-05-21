@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>e-Waste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    
+</head>
+<div >
+<body>
+    <center>
+    <h3>Add Items</h3>
+    
+    <form name="myform">
+        <br>
+        <br><input name= "name" type="text" placeholder="Item Name" id="name"> <span>
+        <br><br><textarea name="desc" placeholder="Enter description of Item" style="height: 70px; width: 250px" id="desc"></textarea>
+        <br><br><input type="text" name="type" ng-model="type" placeholder="waste type" id="type"> 
+        <br><br><input type="text" name="img" id="photo" ng-model="url" placeholder="image url">
+        <br><br><button onclick="writeData()">Submit</button>
+        <br><br>
+        <input type ="button" onclick="window.location.href = 'file:///Users/harshmehta/Desktop/Harsh/projects/ES//vieworg.html';" value="View Organization">
+        <input type ="button" onclick="window.location.href = 'file:///Users/harshmehta/Desktop/Harsh/projects/ES//viewwaste.html';" value="View Feedback">
+        <input type ="button" onclick="window.location.href = 'file:///Users/harshmehta/Desktop/Harsh/projects/ES//viewaste.html';" value="View Waste"></button>
+    </form>    
+    </center>
+</div>
+</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+</html>
